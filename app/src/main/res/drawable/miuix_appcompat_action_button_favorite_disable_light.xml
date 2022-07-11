@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/miuix_appcompat_action_button_favorite_disable_light__0">
+    <target android:name="path_2" android:animation="@drawable/miuix_appcompat_action_button_favorite_disable_light__1"/>
+    <target android:name="group" android:animation="@drawable/miuix_appcompat_action_button_favorite_disable_light__2"/>
+</animated-vector>

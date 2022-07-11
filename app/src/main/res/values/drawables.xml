@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="action_mode_immersion_more">@drawable/miuix_appcompat_action_mode_immersion_more_light</drawable>
+    <drawable name="btn_bg_light">@drawable/miuix_appcompat_btn_bg_dialog_light</drawable>
+    <drawable name="icon_info">@drawable/miuix_appcompat_icon_info_light</drawable>
+    <drawable name="notification_template_icon_bg">#3333b5e5</drawable>
+    <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
+</resources>
