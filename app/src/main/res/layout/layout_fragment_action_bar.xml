@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/fragment_action_bar"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp">
+
+    <ImageView android:id="@+id/imv_home_back"
+        android:contentDescription="@string/menuDesc"
+        style="@style/home_menu_style"/>
+
+    <TextView
+        android:textAppearance="@style/Fragment.TextAppearance.ActionBar"
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

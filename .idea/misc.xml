@@ -29,6 +29,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_btn_default_mtrl_shape.xml" value="0.11" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_btn_radio_material.xml" value="0.11" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_cab_background_internal_bg.xml" value="0.11" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_list_selector_background_transition_holo_dark.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_ratingbar_indicator_material.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_ratingbar_material.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/abc_ratingbar_small_material.xml" value="0.1" />
@@ -50,6 +51,7 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/bordered_bg.xml" value="0.11" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/bottom_border.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/bottom_rounded_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_2nd.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_calculate.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_calculate_d.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_calculate_p.xml" value="0.1" />
@@ -57,24 +59,49 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_checkbox_unchecked_mtrl.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_clear_scientific.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_clear_simple.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_cos_state.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_deg.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_del_scientific.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_del_simple.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_digit0_port.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_equal_scientific.xml" value="0.112" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_equal_simple.xml" value="0.112" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_fac_state.xml" value="0.1315" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_fun.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_fun_l.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_left_p_state.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_lg_state.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_ln_state.xml" value="0.11" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_normal.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_ac_p.xml" value="0.1315" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_c.xml" value="0.11" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_del.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_del_p.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_div.xml" value="0.1315" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_equal.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_equal_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_equal_last_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_minus.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_mul.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_number_p.xml" value="0.23" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_percent.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_plus.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_symbol_last.xml" value="0.23" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pad_symbol_last_n.xml" value="0.23" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pi_state.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_pow_state.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_radio_off_mtrl.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_radio_off_to_on_mtrl_animation.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_radio_on_mtrl.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_right_p_state.xml" value="0.112" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_rpc_state.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_sin_state.xml" value="0.112" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_sqrt_state.xml" value="0.1315" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/btn_tan_state.xml" value="0.112" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/corner.xml" value="0.139" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/edt_si.xml" value="0.187" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/frame_animation_btn_switch.xml" value="0.1315" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/ic_fw_alpha.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/ic_fw_close.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/ic_fw_fullscreen.xml" value="0.1" />
@@ -318,6 +345,8 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_edit_text_search_clear_btn_on_light.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_expander_close_dark.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_expander_close_light.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_expander_open_dark.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_expander_open_light.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ic_invisible_dark.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ic_invisible_light.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ic_message_view_close_error_light.xml" value="0.1" />
@@ -351,6 +380,15 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_list_item_bg_dropdown_popup_middle_light.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_list_item_bg_dropdown_popup_single_dark.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_list_popup_item_bg_dark.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_list_popup_item_bg_light.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_list_small_item_bg_light.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ratingbar.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ratingbar_indicator.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ratingbar_indicator_large.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_ratingbar_indicator_small.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_text_select_handle_left.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_text_select_handle_middle.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_text_select_handle_right.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_window_bg_light.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_window_bg_secondary_dark.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_appcompat_window_bg_secondary_light.xml" value="0.1" />
@@ -366,19 +404,39 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_preference_last_item_radio_two_state_bg_pressed.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/miuix_preference_navigation_item_bg_selected.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/preference_list_divider_material.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/radio_button.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/radio_button_normal.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/rating_stars.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/selector_voice_assistant.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/thumb_float_window_seek_bar.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/drawable/top_rounded_bg.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout-w720dp-h1280dp/normal.xml" value="0.164453125" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout-w720dp-h1280dp/number_pad_simple.xml" value="0.1388888888888889" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout-w720dp-h1280dp/number_pad_simple_1.xml" value="0.1388888888888889" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/abc_action_bar_title_item.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/activity_bmi.xml" value="0.4" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/activity_main.xml" value="0.19479166666666667" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_calculator.xml" value="0.264" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_finance.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_life.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_blank.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_calculator.xml" value="0.25254237288135595" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_calculator_scientific.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_finance.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_life.xml" value="0.264" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/fragment_root.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/history_item.xml" value="0.1791363830696879" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/layout_fragment_action_bar.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/layout_history_action_bar.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/layout_tab_action_bar.xml" value="0.19722222222222222" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/new_app_widget.xml" value="0.18518518518518517" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/number_pad_scientific.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/number_pad_scientific_operation.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/number_pad_scientific_operation_left.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/number_pad_simple.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/o.xml" value="0.264" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/layout/view_setting_menu.xml" value="0.21927083333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/menu/action_bar_menu.xml" value="0.2921875" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/Geek/XiomiCalculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AppData/Local/Temp/drawable-temp/fake_of_abc_btn_check_material_anim.xml" value="0.112" />
       </map>
     </option>
   </component>

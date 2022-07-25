@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/btn_2nd"
+            android:layout_width="0dp"
+            android:src="@drawable/btn_2nd"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:contentDescription="@string/secondFunctionDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/btn_angle_or_rad"
+            android:layout_width="0dp"
+            android:src="@drawable/btn_deg"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            style="@style/CalWidget.Button.Pad.Outer.Top"
+            android:contentDescription="@string/todo" />
+
+        <ImageView
+            android:id="@+id/lyt_sin"
+            android:src="@drawable/btn_sin_state"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/sinDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/lyt_cos"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_cos_state"
+            android:contentDescription="@string/cosDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView android:id="@+id/lyt_tan"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_tan_state"
+            android:contentDescription="@string/tanDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/btn_pow"
+            android:src="@drawable/btn_pow_state"
+            android:scaleType="center"
+            android:contentDescription="@string/powerDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/btn_lg"
+            android:src="@drawable/btn_lg_state"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/lgDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/btn_ln"
+            android:src="@drawable/btn_ln_state"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/lnDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/btn_lp"
+            android:src="@drawable/btn_left_p_state"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/leftParenDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+
+        <ImageView
+            android:id="@+id/btn_rp"
+            android:src="@drawable/btn_right_p_state"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/rightParenDesc"
+            style="@style/CalWidget.Button.Pad.Outer.Top"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:height="@dimen/miuix_appcompat_check_widget_height_v19" android:width="@dimen/miuix_appcompat_check_widget_width_v19" android:viewportWidth="104" android:viewportHeight="104">
-    <path android:fillColor="#000000" android:pathData="M52,52m-31.5,0a31.5,31.5 0,1 1,63 0a31.5,31.5 0,1 1,-63 0" android:strokeColor="#000000" android:strokeWidth="1" android:strokeAlpha="0.0962" android:fillAlpha="0.04" android:fillType="evenOdd"/>
-</vector>

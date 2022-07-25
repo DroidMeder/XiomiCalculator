@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btn_sqrt"
+        android:src="@drawable/btn_sqrt_state"
+        android:scaleType="center"
+        android:contentDescription="@string/sqrtDesc"
+        style="@style/CalWidget.Button.Pad.Outer.Left"/>
+
+    <ImageView
+        android:id="@+id/btn_fac"
+        android:src="@drawable/btn_fac_state"
+        android:scaleType="center"
+        android:contentDescription="@string/factorialDesc"
+        style="@style/CalWidget.Button.Pad.Outer.Left"/>
+
+    <ImageView
+        android:id="@+id/btn_reciprocal"
+        android:src="@drawable/btn_rpc_state"
+        android:scaleType="center"
+        android:contentDescription="@string/reciprocalDesc"
+        style="@style/CalWidget.Button.Pad.Outer.Left"/>
+
+    <ImageView
+        android:id="@+id/btn_pi"
+        android:src="@drawable/btn_pi_state"
+        android:scaleType="center"
+        android:contentDescription="@string/piDesc"
+        style="@style/CalWidget.Button.Pad.Outer.Left"/>
+
+    <ImageView
+        android:id="@+id/btn_switch_s"
+        android:src="@drawable/frame_animation_btn_switch"
+        android:scaleType="center"
+        android:contentDescription="@string/switchDesc"
+        style="@style/CalWidget.Button.Pad.Outer.Left"/>
+</LinearLayout>

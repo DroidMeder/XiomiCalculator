@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_simple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|end|center_vertical|center_horizontal|center"
+    android:background="@color/calvertical_view_background"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom|end|center_vertical|center_horizontal|center"
+        android:layout_weight="7"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="5"
+            android:orientation="vertical"
+            tools:ignore="NestedWeights">
+
+            <ImageView
+                android:id="@+id/btn_c_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/clearDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_c" />
+
+            <TextView
+                android:id="@+id/btn_7_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit7" />
+
+            <TextView
+                android:id="@+id/btn_4_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit4" />
+
+            <TextView
+                android:id="@+id/btn_1_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit1" />
+
+            <LinearLayout style="@style/CalWidget.Button.Pad.V">
+
+                <ImageView
+                    android:id="@+id/btn_switch"
+                    style="@style/CalWidget.Button.Pad.V"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/switchDesc"
+                    android:scaleType="center"
+                    android:src="@drawable/frame_animation_btn_switch"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_del_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/deleteDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_del" />
+
+            <TextView
+                android:id="@+id/btn_8_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit8" />
+
+            <TextView
+                android:id="@+id/btn_5_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit5" />
+
+            <TextView
+                android:id="@+id/btn_2_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit2" />
+
+            <TextView
+                android:id="@+id/btn_0_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_percent_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/percentDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_percent" />
+
+            <TextView
+                android:id="@+id/btn_9_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit9" />
+
+            <TextView
+                android:id="@+id/btn_6_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit6" />
+
+            <TextView
+                android:id="@+id/btn_3_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:gravity="center"
+                android:text="@string/digit3" />
+
+            <TextView
+                android:id="@+id/btn_dot_s"
+                style="@style/CalWidget.Button.Pad.V"
+                android:contentDescription="@string/dotDesc"
+                android:gravity="center"
+                android:text="@string/dot" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/btn_div_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/divDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_div" />
+
+            <ImageView
+                android:id="@+id/btn_mul_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/mulDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_mul" />
+
+            <ImageView
+                android:id="@+id/btn_minus_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/minusDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_minus" />
+
+            <ImageView
+                android:id="@+id/btn_plus_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/plusDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_plus" />
+
+            <ImageView
+                android:id="@+id/btn_equal_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/equalDesc"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="center"
+                android:src="@drawable/btn_pad_equal"
+                android:focusable="true"
+                android:background="@drawable/corner"/>
+
+            <ImageView
+                android:id="@+id/btn_ok_s"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/todo"
+                android:padding="@dimen/btn_pad_number_padding"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pad_ok"
+                android:visibility="gone"
+                app:normalCircleColor="@color/btn_ok_circle_n"
+                app:pressCircleColor="@color/btn_ok_circle_p" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

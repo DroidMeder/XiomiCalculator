@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:background="@color/white"
+    android:elevation="@dimen/_32sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_setting_history"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/top_rounded_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_history"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/icon_history"
+            android:layout_marginStart="23dp"
+            android:contentDescription="@string/history" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/result_text_color"
+            android:gravity="center_vertical"
+            android:id="@+id/setting_history"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_history"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_setting_about"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_rounded_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_about"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:src="@drawable/icon_about"
+            android:layout_marginStart="23dp"
+            android:contentDescription="@string/about" />
+
+        <TextView
+            android:textSize="14sp"
+            android:textColor="@color/result_text_color"
+            android:gravity="center_vertical"
+            android:id="@+id/setting_about"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_about"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"/>
+    </LinearLayout>
+</LinearLayout>

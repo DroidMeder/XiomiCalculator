@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_single_pressed"/>
-    <item android:drawable="@drawable/text_select_button_bg_single_normal"/>
-    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_left_pressed"/>
-    <item android:drawable="@drawable/text_select_button_bg_left_normal"/>
-    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_middle_pressed"/>
-    <item android:drawable="@drawable/text_select_button_bg_middle_normal"/>
-    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_right_pressed"/>
-    <item android:drawable="@drawable/text_select_button_bg_right_normal"/>
-    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_single_pressed"/>
-    <item android:drawable="@drawable/text_select_button_bg_single_normal"/>
+<selector>
+<!--    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_single_pressed"/>-->
+<!--    <item android:drawable="@drawable/text_select_button_bg_single_normal"/>-->
+<!--    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_left_pressed"/>-->
+<!--    <item android:drawable="@drawable/text_select_button_bg_left_normal"/>-->
+<!--    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_middle_pressed"/>-->
+<!--    <item android:drawable="@drawable/text_select_button_bg_middle_normal"/>-->
+<!--    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_right_pressed"/>-->
+<!--    <item android:drawable="@drawable/text_select_button_bg_right_normal"/>-->
+<!--    <item android:state_pressed="true" android:drawable="@drawable/text_select_button_bg_single_pressed"/>-->
+<!--    <item android:drawable="@drawable/text_select_button_bg_single_normal"/>-->
 </selector>

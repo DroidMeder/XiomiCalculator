@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="7"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_calculator_result"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <TextView android:textSize="@dimen/relationship_input"
+            android:textColor="@color/relationship_text_view_input_default"
+            android:gravity="end"
+            android:id="@+id/text_view_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="false"/>
+        <TextView android:textSize="@dimen/relationship_result"
+            android:gravity="end"
+            android:id="@+id/text_view_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/relationship_result_margin_top"
+            android:layout_marginBottom="@dimen/relationship_result_margin_bottom"/>
+       <!-- <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:ems="10"
+            android:enabled="false"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|number"
+            tools:ignore="LabelFor" />-->
+        <ImageView android:id="@+id/action_divider"
+            android:background="?android:attr/dividerHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:contentDescription="@string/todo" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lyt_pad_top_symbol"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6">
+            <include
+                android:id="@+id/viewstub"
+                layout="@layout/number_pad_scientific"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_16sdp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

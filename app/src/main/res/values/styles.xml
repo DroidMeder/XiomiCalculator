@@ -14,6 +14,12 @@
         <item name="android:displayOptions">homeAsUp</item>
     </style>
 
+    <style name="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/miuix_appcompat_title_text_size</item>
+        <item name="android:textColor">@color/miuix_appcompat_action_bar_title_text_light</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
     <style name="AlertDialog">
         <item name="android:fullDark">@android:color/transparent</item>
         <item name="android:topDark">@android:color/transparent</item>
@@ -83,15 +89,15 @@
             @drawable/miuix_appcompat_scrollbar_thumb_vertical_dark
         </item>
         <item name="android:textColorLink">@color/miuix_appcompat_link_text_dark</item>
-        <item name="android:listChoiceIndicatorMultiple">
+       <!-- <item name="android:listChoiceIndicatorMultiple">
             @drawable/miuix_appcompat_btn_checkbox_dark
-        </item>
+        </item>-->
         <item name="android:textColorAlertDialogListItem">
             @color/miuix_appcompat_dialog_list_text_dark
         </item>
         <item name="actionBarBackground">@drawable/miuix_appcompat_dialog_title_bg_dark</item>
         <item name="actionBarTitleColor">@color/miuix_appcompat_action_bar_title_text_dark</item>
-        <item name="checkBoxButtonCompat">@drawable/miuix_appcompat_btn_checkbox_dark</item>
+<!--        <item name="checkBoxButtonCompat">@drawable/miuix_appcompat_btn_checkbox_dark</item>-->
         <item name="checkBoxOnDrawableBackgroundColor">
             @color/miuix_appcompat_checkbox_btn_on_background_color_dark
         </item>
@@ -123,9 +129,9 @@
             @color/miuix_appcompat_checkable_btn_text_color_stable_dark
         </item>
         <item name="dialogBgColor">@color/miuix_appcompat_dialog_bg_color_dark</item>
-        <item name="dialogCheckBoxDrawableStart">
-            @drawable/miuix_appcompat_btn_checkbox_dialog_dark
-        </item>
+<!--        <item name="dialogCheckBoxDrawableStart">-->
+<!--            @drawable/miuix_appcompat_btn_checkbox_dialog_dark-->
+<!--        </item>-->
         <item name="dialogCheckBoxStyle">@style/Widget.CompoundButton.CheckBox.Dialog.Dark</item>
         <item name="dialogCheckBoxTextColor">
             @color/miuix_appcompat_dialog_checkbox_text_color_dark
@@ -177,16 +183,16 @@
             @drawable/miuix_appcompat_scrollbar_thumb_vertical_light
         </item>
         <item name="android:textColorLink">@color/miuix_appcompat_link_text_light</item>
-        <item name="android:listChoiceIndicatorMultiple">
-            @drawable/miuix_appcompat_btn_checkbox_light
-        </item>
+<!--        <item name="android:listChoiceIndicatorMultiple">-->
+<!--            @drawable/miuix_appcompat_btn_checkbox_light-->
+<!--        </item>-->
         <item name="android:textColorAlertDialogListItem">
             @color/miuix_appcompat_dialog_list_text_light
         </item>
         <item name="actionBarBackground">@drawable/miuix_appcompat_dialog_title_bg_light</item>
         <item name="actionBarTitleColor">@color/miuix_appcompat_action_bar_title_text_light</item>
         <item name="buttonBackground">@drawable/btn_bg_light</item>
-        <item name="checkBoxButtonCompat">@drawable/miuix_appcompat_btn_checkbox_light</item>
+<!--        <item name="checkBoxButtonCompat">@drawable/miuix_appcompat_btn_checkbox_light</item>-->
         <item name="checkBoxOnDrawableBackgroundColor">
             @color/miuix_appcompat_checkbox_btn_on_background_color_light
         </item>
@@ -218,9 +224,9 @@
             @color/miuix_appcompat_checkable_btn_text_color_stable_light
         </item>
         <item name="dialogBgColor">@color/miuix_appcompat_dialog_bg_color_light</item>
-        <item name="dialogCheckBoxDrawableStart">
-            @drawable/miuix_appcompat_btn_checkbox_dialog_light
-        </item>
+<!--        <item name="dialogCheckBoxDrawableStart">-->
+<!--            @drawable/miuix_appcompat_btn_checkbox_dialog_light-->
+<!--        </item>-->
         <item name="dialogCheckBoxStyle">@style/Widget.CompoundButton.CheckBox.Dialog</item>
         <item name="dialogCheckBoxTextColor">
             @color/miuix_appcompat_dialog_checkbox_text_color_light
@@ -574,6 +580,12 @@
     </style>
 
     <style name="CalWidget.Button.Pad.V">
+        <item name="android:background">@drawable/btn_pad_symbol_last</item>
+        <item name="android:textSize">@dimen/_48sdp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="CalWidget.Button.Pad.IV">
         <item name="android:background">@drawable/btn_pad_symbol_last</item>
         <item name="android:layout_width">match_parent</item>
     </style>
@@ -1188,14 +1200,14 @@
     <style name="Widget.ArrowPopupView.DayNight" />
 
     <style name="Widget.AutoCompleteTextView">
-        <item name="android:background">
-            @drawable/miuix_appcompat_auto_complete_text_input_background
-        </item>
+<!--        <item name="android:background">-->
+<!--            @drawable/miuix_appcompat_auto_complete_text_input_background-->
+<!--        </item>-->
         <item name="android:completionThreshold">2</item>
         <item name="android:dropDownSelector">@android:color/transparent</item>
-        <item name="android:popupBackground">
-            @drawable/miuix_appcompat_auto_complete_text_popup_background
-        </item>
+<!--        <item name="android:popupBackground">-->
+<!--            @drawable/miuix_appcompat_auto_complete_text_popup_background-->
+<!--        </item>-->
         <item name="android:dropDownWidth">wrap_content</item>
         <item name="android:dropDownHorizontalOffset">0dp</item>
         <item name="android:dropDownVerticalOffset">0dp</item>
@@ -1327,7 +1339,7 @@
 
     <style name="Widget.CompoundButton.CheckBox.Dialog.Dark">
         <item name="android:textColor">@color/miuix_appcompat_dialog_checkbox_text_color_dark</item>
-        <item name="drawableStartCompat">@drawable/miuix_appcompat_btn_checkbox_dialog_dark</item>
+<!--        <item name="drawableStartCompat">@drawable/miuix_appcompat_btn_checkbox_dialog_dark</item>-->
     </style>
 
     <style name="Widget.CompoundButton.CheckBox.Expand">
@@ -1425,7 +1437,7 @@
         <item name="android:textColor">?android:attr/editTextColor</item>
         <item name="android:textColorHint">?attr/editTextColorHint</item>
         <item name="android:gravity">right|center_horizontal|clip_horizontal</item>
-        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_light</item>
+<!--        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_light</item>-->
         <item name="android:singleLine">true</item>
         <item name="android:textSelectHandleLeft">
             @drawable/miuix_appcompat_text_select_handle_left
@@ -1445,7 +1457,7 @@
     </style>
 
     <style name="Widget.EditText.Dark">
-        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_dark</item>
+<!--        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_dark</item>-->
     </style>
 
     <style name="Widget.EditText.Dark.Clearable">
@@ -1926,7 +1938,7 @@
     </style>
 
     <style name="Widget.StateEditText.Dark">
-        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_dark</item>
+<!--        <item name="android:background">@drawable/miuix_appcompat_edit_text_bg_dark</item>-->
     </style>
 
     <style name="Widget.StateEditText.DayNight" />
@@ -2028,8 +2040,18 @@
         <item name="android:scrollHorizontally">true</item>
         <item name="android:includeFontPadding">false</item>
     </style>
+    <style name="Fragment"/>
+
+    <style name="Fragment.TextAppearance"/>
+
+    <style name="Fragment.TextAppearance.ActionBar">
+        <item name="android:textSize">@dimen/fragment_action_bar_title_txt_size</item>
+        <item name="android:textColor">@color/calculator_fragment_title_txt_color</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
 
     <style name="home_menu_style">
+        <item name="android:background">@drawable/miuix_appcompat_action_bar_back_light</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:scaleType">center</item>

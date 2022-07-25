@@ -7,22 +7,22 @@
 
     <fragment
         android:id="@+id/rootFragment"
-        android:name="kg.internlabs.xiomicalculator.RootFragment"
+        android:name="kg.internlabs.xiomicalculator.viewer.ui.rootViewerFragment.RootFragment"
         android:label="fragment_root"
         tools:layout="@layout/fragment_root" />
     <fragment
         android:id="@+id/calculatorFragment"
-        android:name="kg.internlabs.xiomicalculator.CalculatorFragment"
+        android:name="kg.internlabs.xiomicalculator.viewer.ui.simpleCalculatorViewer.SimpleCalculatorViewerFragment"
         android:label="fragment_calculator"
         tools:layout="@layout/fragment_calculator" />
     <fragment
         android:id="@+id/lifeFragment"
-        android:name="kg.internlabs.xiomicalculator.LifeFragment"
+        android:name="kg.internlabs.xiomicalculator.viewer.ui.lifeViewerFragment.LifeFragment"
         android:label="fragment_life"
         tools:layout="@layout/fragment_life" />
     <fragment
         android:id="@+id/financeFragment"
-        android:name="kg.internlabs.xiomicalculator.FinanceFragment"
+        android:name="kg.internlabs.xiomicalculator.viewer.ui.financeViewFragment.FinanceFragment"
         android:label="fragment_finance"
         tools:layout="@layout/fragment_finance" />
 </navigation>

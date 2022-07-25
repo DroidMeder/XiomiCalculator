@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/history_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <ImageView android:id="@+id/imv_home_menu"
+        android:contentDescription="@string/menuDesc"
+        style="@style/home_menu_style"/>
+
+    <TextView
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:id="@+id/txv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_history"
+        android:layout_centerInParent="true"
+        tools:ignore="RelativeOverlap" />
+
+    <ImageView android:id="@+id/img_more_setting"
+        android:visibility="visible"
+        android:layout_width="40dp"
+        android:src="@drawable/action_mode_immersion_more"
+        android:contentDescription="@string/preference_settings"
+        android:layout_alignParentEnd="true"
+        style="@style/title_item_style"/>
+</RelativeLayout>
