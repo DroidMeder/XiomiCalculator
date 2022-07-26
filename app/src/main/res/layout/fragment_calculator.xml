@@ -22,6 +22,8 @@
             android:id="@+id/recycler_calculator_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="@dimen/_54sdp"
+            android:soundEffectsEnabled="true"
             tools:listitem="@layout/history_item"
             app:layout_constraintBottom_toTopOf="@id/text_view_input"
             app:layout_constraintTop_toTopOf="parent" />
@@ -32,8 +34,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_16sdp"
-            android:gravity="end"
+            android:gravity="end|bottom"
+            android:minHeight="@dimen/_60sdp"
             android:singleLine="false"
+            android:layout_marginTop="@dimen/_16sdp"
             android:textColor="@color/relationship_text_view_input_default"
             android:textSize="@dimen/_30ssp"
             app:layout_constraintBottom_toTopOf="@id/text_view_result"
@@ -45,9 +49,10 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_16sdp"
             android:layout_marginTop="@dimen/relationship_result_margin_top"
-            android:layout_marginBottom="@dimen/relationship_result_margin_bottom"
+            android:layout_marginBottom="@dimen/_8sdp"
             android:ellipsize="end"
-            android:gravity="end"
+            android:minHeight="@dimen/_44sdp"
+            android:gravity="end|center_vertical"
             android:singleLine="true"
             android:text="@string/_0"
             android:textColor="@color/relationship_text_view_input_default"
@@ -75,15 +80,7 @@
                 android:id="@+id/num_pad_simple"
                 layout="@layout/number_pad_simple"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="@dimen/_260sdp" />
         </LinearLayout>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="?android:attr/dividerHorizontal"
-            android:contentDescription="@string/todo"
-            android:focusable="true"
-            app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

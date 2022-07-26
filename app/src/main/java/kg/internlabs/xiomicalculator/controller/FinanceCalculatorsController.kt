@@ -2,17 +2,16 @@ package kg.internlabs.xiomicalculator.controller
 
 import android.view.View
 import kg.internlabs.xiomicalculator.R
-import kg.internlabs.xiomicalculator.model.SimpleOperationsModel
-import kg.internlabs.xiomicalculator.viewer.ui.simpleCalculatorViewer.SimpleCalculatorViewerFragment
+import kg.internlabs.xiomicalculator.model.FinanceOperationsModel
+import kg.internlabs.xiomicalculator.model.LifeOperationsModel
+import kg.internlabs.xiomicalculator.viewer.ui.financeViewFragment.FinanceFragment
+import kg.internlabs.xiomicalculator.viewer.ui.lifeViewerFragment.LifeFragment
 
-class SimpleCalculatorController(viewer: SimpleCalculatorViewerFragment) : View.OnClickListener{
-    private val simpleModel: SimpleOperationsModel
+class FinanceCalculatorsController(viewer: FinanceFragment) : View.OnClickListener{
+    private val financeModel : FinanceOperationsModel
 
     init {
-        println("******* Simple Cal controller constructor started")
-        simpleModel = SimpleOperationsModel(viewer = viewer)
-        println("********* I am Simple Cal controller object")
-        println("********* Simple Cal controller constructor finished")
+        financeModel = FinanceOperationsModel(viewer = viewer)
     }
 
 
@@ -40,6 +39,6 @@ class SimpleCalculatorController(viewer: SimpleCalculatorViewerFragment) : View.
             R.id.btn_plus_s -> values = '+'
             R.id.btn_equal_s -> values = '='
         }
-        simpleModel.doYourJob(values)
+        financeModel.doYourJob(values)
     }
 }

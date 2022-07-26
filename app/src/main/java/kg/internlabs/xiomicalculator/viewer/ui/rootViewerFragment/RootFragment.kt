@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import kg.internlabs.xiomicalculator.R
 import kg.internlabs.xiomicalculator.databinding.FragmentRootBinding
+import kg.internlabs.xiomicalculator.viewer.ui.extentions.showToast
 
 
 class RootFragment : Fragment() {
@@ -36,25 +37,29 @@ class RootFragment : Fragment() {
         initListeners()
     }
 
-    private fun initListeners() {
+    private fun initListeners() = with(binding) {
 
-        binding.root.findViewById<ImageView>(R.id.ic_cal_more).setOnClickListener {
+        root.findViewById<ImageView>(R.id.ic_cal_more).setOnClickListener {
             if (pagerPosition == 0){
-                binding.settingMenu.root.isVisible = !binding.settingMenu.root.isVisible
+                settingMenu.root.isVisible = !binding.settingMenu.root.isVisible
 
             } else {
-                println("go to hell")
+                requireContext().showToast("В процессе разработки...")
             }
         }
 
-        binding.root.findViewById<RelativeLayout>(R.id.rl_tab_cal).setOnClickListener{
-            binding.pager.currentItem = 0
+        root.findViewById<ImageView>(R.id.ic_float_btn).setOnClickListener {
+            requireContext().showToast("В процессе разработки...")
         }
-        binding.root.findViewById<RelativeLayout>(R.id.rl_tab_life).setOnClickListener{
-            binding.pager.currentItem = 1
+
+        root.findViewById<RelativeLayout>(R.id.rl_tab_cal).setOnClickListener{
+            pager.currentItem = 0
         }
-        binding.root.findViewById<RelativeLayout>(R.id.rl_tab_finance).setOnClickListener{
-            binding.pager.currentItem = 2
+        root.findViewById<RelativeLayout>(R.id.rl_tab_life).setOnClickListener{
+            pager.currentItem = 1
+        }
+        root.findViewById<RelativeLayout>(R.id.rl_tab_finance).setOnClickListener{
+            pager.currentItem = 2
         }
     }
 
@@ -76,6 +81,7 @@ class RootFragment : Fragment() {
                         binding.root.findViewById<ImageView>(R.id.iv_tab_cal).setImageResource(R.drawable.tab_ic_calculator)
                         binding.root.findViewById<ImageView>(R.id.iv_tab_life).setImageResource(R.drawable.tab_ic_life_selected)
                         binding.root.findViewById<ImageView>(R.id.iv_tab_finance).setImageResource(R.drawable.tab_ic_finance)
+                        binding.settingMenu.root.isVisible = false
                         pagerPosition = 1
                     }
                     2 -> {
@@ -84,6 +90,7 @@ class RootFragment : Fragment() {
                         binding.root.findViewById<ImageView>(R.id.iv_tab_cal).setImageResource(R.drawable.tab_ic_calculator)
                         binding.root.findViewById<ImageView>(R.id.iv_tab_life).setImageResource(R.drawable.tab_ic_life)
                         binding.root.findViewById<ImageView>(R.id.iv_tab_finance).setImageResource(R.drawable.tab_ic_finance_selected)
+                        binding.settingMenu.root.isVisible = false
                         pagerPosition = 2
                     }
                 }

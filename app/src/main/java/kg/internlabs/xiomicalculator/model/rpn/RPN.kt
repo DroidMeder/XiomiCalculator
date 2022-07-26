@@ -11,7 +11,7 @@ class RPN {
 
     private val calculator: SimpleCalculator = SimpleCalculator()
 
-    fun calculate(infix : String) : String {
+    fun calculate(infix: String): String {
         if (!infix.contains("[*/+-]".toRegex())) {
             return infix
         }
@@ -25,57 +25,62 @@ class RPN {
         val stack = Stack<Char>()
 
         infix.forEachIndexed { index, it ->
-            if (!operationPriority.containsKey(it)){
-                if (postfix.isNotEmpty()){ postfix += it } else {
+            if (!operationPriority.containsKey(it)) {
+                if (postfix.isNotEmpty()) {
+                    postfix += it
+                } else {
                     postfix = it.toString()
                 }
-            }
-            else if (operationPriority.containsKey(it) && index != infix.length-1){
-                if (postfix.endsWith("E")){
+            } else if (operationPriority.containsKey(it) && index != infix.length - 1) {
+                if (postfix.endsWith("E")) {
                     postfix += it
                 } else {
                     postfix += " "
-                    if (stack.isNotEmpty()){
-                        if (operationPriority.getValue(stack.peek()) < operationPriority.getValue(it)){
+                    if (stack.isNotEmpty()) {
+                        if (operationPriority.getValue(stack.peek()) < operationPriority.getValue(it)) {
                             stack.push(it)
-                        }else {
+                        } else {
                             while (stack.isNotEmpty() && operationPriority.getValue(stack.peek())
-                                >= operationPriority.getValue(it)){
-                                if (postfix.isNotEmpty()){ postfix += "${stack.pop()} "
+                                >= operationPriority.getValue(it)
+                            ) {
+                                if (postfix.isNotEmpty()) {
+                                    postfix += "${stack.pop()} "
                                 } else {
-                                    postfix =  "${stack.pop()}"
+                                    postfix = "${stack.pop()}"
                                 }
                             }
                             stack.push(it)
                         }
-                    }else {
+                    } else {
                         stack.push(it)
                     }
                 }
             }
         }
-        while (stack.isNotEmpty()){
-            if (postfix.isNotEmpty()){ postfix += " ${stack.pop()}"
+        while (stack.isNotEmpty()) {
+            if (postfix.isNotEmpty()) {
+                postfix += " ${stack.pop()}"
             } else {
-                postfix =  "${stack.pop()}"
+                postfix = "${stack.pop()}"
             }
         }
         return postfix
     }
 
-    fun percentCalculate(totalTemp: String): String {
+    fun percentCalculate(totalTmp: String): String {
         var drop = ""
         var outcome = 0.0
-        val any = findIndexOfLastOperator(totalTemp)
 
-        val percent = totalTemp.takeLast(totalTemp.length-any-1)
-        if (!totalTemp.contains("E-".toRegex()) || !totalTemp.contains("E+".toRegex())) {
-            drop = totalTemp.dropLast(totalTemp.length-any-1)
+        val any = findIndexOfLastOperator(totalTmp)
+
+        val percent = totalTmp.takeLast(totalTmp.length - any - 1)
+        if (!totalTmp.contains("E-".toRegex()) || !totalTmp.contains("E+".toRegex())) {
+            drop = totalTmp.dropLast(totalTmp.length - any - 1)
         }
-        val tmp = calculate(drop.dropLast(1))
+        val tmp = calculate(drop)
 
         if (drop.isNotEmpty()) {
-            when(drop.last()){
+            when (drop.last()) {
                 '+' -> {
                     outcome = tmp.toDouble() * percent.toDouble() / 100
                 }
@@ -90,13 +95,13 @@ class RPN {
                 }
             }
         } else {
-            if (percent.isNotEmpty()){
+            if (percent.isNotEmpty()) {
                 val per = percent.toDouble() / 100
                 val bigDecimal = per.toBigDecimal(MathContext(4))
-
-                if (bigDecimal.toString().last().code > 8 && bigDecimal.toString().contains("E")){
-                    val bigD = bigDecimal.toString().dropLast(1)
-                    return "$bigD NaN"
+                if (bigDecimal.toString().last().code > 8 && bigDecimal.toString().contains("E")) {
+                    var bigD = bigDecimal.toString().dropLast(1)
+                    bigD += "NaN"
+                    return bigD
                 }
                 return bigDecimal.toString()
             }
@@ -104,9 +109,10 @@ class RPN {
 
         val bigDecimal = outcome.toBigDecimal(MathContext(4))
 
-        if (bigDecimal.toString().last().code > 8 && bigDecimal.toString().contains("E")){
-            val bigD = bigDecimal.toString().dropLast(1)
-            return "$bigD NaN"
+        if (bigDecimal.toString().last().code > 8 && bigDecimal.toString().contains("E")) {
+            var bigD = bigDecimal.toString().dropLast(1)
+            bigD += "NaN"
+            return bigD
         }
         return bigDecimal.toString()
     }
@@ -114,10 +120,10 @@ class RPN {
     private fun findIndexOfLastOperator(totalTemp: String): Int {
         var index = 0
 
-        if (totalTemp.contains("E")){
-            for (i in totalTemp.length-1..1){
-                if (!totalTemp[i].isDigit() || totalTemp[i] != '.' || totalTemp[i] != 'E'){
-                    if (totalTemp[i-1] != 'E'){
+        if (totalTemp.contains("E")) {
+            for (i in totalTemp.length - 1 downTo 1) {
+                if (!totalTemp[i].isDigit() || totalTemp[i] != '.' || totalTemp[i] != 'E') {
+                    if (totalTemp[i - 1] != 'E') {
                         index = i
                     }
                 }

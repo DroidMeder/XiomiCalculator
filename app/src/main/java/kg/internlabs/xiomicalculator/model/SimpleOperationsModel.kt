@@ -1,5 +1,6 @@
 package kg.internlabs.xiomicalculator.model
 
+import kg.internlabs.xiomicalculator.model.data.models.History
 import kg.internlabs.xiomicalculator.model.rpn.RPN
 import kg.internlabs.xiomicalculator.viewer.ui.simpleCalculatorViewer.SimpleCalculatorViewerFragment
 import java.text.DecimalFormat
@@ -7,7 +8,9 @@ import java.text.DecimalFormat
 class SimpleOperationsModel(viewer: SimpleCalculatorViewerFragment) {
     private var simpleViewer: SimpleCalculatorViewerFragment
     private var rpn: RPN
-    
+    private var historyList: MutableList<History>
+    private val operationPriority = mapOf('+' to 1, '-' to 1, '/' to 2, '*' to 2)
+
     private var totalTemp: String
     private var result: String
 
@@ -19,6 +22,7 @@ class SimpleOperationsModel(viewer: SimpleCalculatorViewerFragment) {
         totalTemp = ""
         result = "0"
         rpn = RPN()
+        historyList = mutableListOf()
         println("********* Simple Cal Model constructor finished")
     }
 
@@ -54,9 +58,12 @@ class SimpleOperationsModel(viewer: SimpleCalculatorViewerFragment) {
             }
             61 -> {  // =
                 if (result != "0." && result != "0") {
-                    simpleViewer.thatIsIt(totalTemp, "= " + getFormattedResult())
+                    historyList.add(History(input = totalTemp, result = "=$result"))
+                    simpleViewer.thatIsIt(totalTemp, "= " + getFormattedResult(),
+                        historyList.toList())
                 } else {
-                    simpleViewer.thatIsIt(totalTemp, "0")
+                    historyList.add(History(input = totalTemp, result = "0"))
+                    simpleViewer.thatIsIt(totalTemp, "0", historyList.toList())
                 }
                 totalTemp = ""
                 result = "0"
@@ -91,7 +98,45 @@ class SimpleOperationsModel(viewer: SimpleCalculatorViewerFragment) {
                 totalTemp = totalTemp.dropLast(totalTemp.length - any - 1)
                 totalTemp += percent
             }
+
+            totalTemp = removeExtraOperators(totalTemp)  //  0-1+2%  выводил результат 0-1+---0.00000002
         }
+    }
+
+    private fun removeExtraOperators(totalTemp: String): String {
+        var tmp = totalTemp
+
+        if (totalTemp.length > 3) {
+            tmp = ""
+            for (i in 2 until totalTemp.length) {
+                if (!totalTemp[i].isDigit() && totalTemp[i] != '.' && totalTemp[i] != 'E') {
+                    println()
+                    if (operationPriority.containsKey(totalTemp[i - 2]) &&
+                        operationPriority.containsKey(totalTemp[i - 1]) &&
+                        !operationPriority.containsKey(totalTemp[i])
+                    ) {
+                        tmp += totalTemp[i]
+                    }
+                    if (operationPriority.containsKey(totalTemp[i - 2]) &&
+                        !operationPriority.containsKey(totalTemp[i - 1]) &&
+                        operationPriority.containsKey(totalTemp[i])
+                    ) {
+                        tmp += totalTemp[i]
+                    }
+                    if (!operationPriority.containsKey(totalTemp[i - 2]) &&
+                        operationPriority.containsKey(totalTemp[i - 1]) &&
+                        operationPriority.containsKey(totalTemp[i])
+                    ) {
+                        tmp += totalTemp[i]
+                    }
+                } else {
+                    tmp += totalTemp[i]
+                }
+            }
+            tmp = totalTemp[1] + tmp
+            tmp = totalTemp[0] + tmp
+        }
+        return tmp
     }
 
     private fun getFormattedResult(): String {
@@ -178,7 +223,7 @@ class SimpleOperationsModel(viewer: SimpleCalculatorViewerFragment) {
         var index = 0
         
         if (totalTemp.contains("E")){
-            for (i in totalTemp.length-1..1){
+            for (i in totalTemp.length-1 downTo  1){
                 if (!totalTemp[i].isDigit() || totalTemp[i] != '.' || totalTemp[i] != 'E'){
                     if (totalTemp[i-1] != 'E'){
                         index = i

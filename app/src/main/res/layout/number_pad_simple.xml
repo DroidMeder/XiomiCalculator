@@ -24,8 +24,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:weightSum="5"
             android:orientation="vertical"
+            android:weightSum="5"
             tools:ignore="NestedWeights">
 
             <ImageView
@@ -54,18 +54,14 @@
                 android:gravity="center"
                 android:text="@string/digit1" />
 
-            <LinearLayout style="@style/CalWidget.Button.Pad.V">
-
-                <ImageView
-                    android:id="@+id/btn_switch"
-                    style="@style/CalWidget.Button.Pad.V"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/switchDesc"
-                    android:scaleType="center"
-                    android:src="@drawable/frame_animation_btn_switch"
-                    android:visibility="visible" />
-            </LinearLayout>
+            <ImageView
+                android:id="@+id/btn_switch"
+                style="@style/CalWidget.Button.Pad.IV"
+                android:contentDescription="@string/switchDesc"
+                android:scaleType="centerInside"
+                android:paddingTop="@dimen/_8sdp"
+                android:src="@drawable/frame_animation_btn_switch"
+                android:visibility="visible" />
         </LinearLayout>
 
         <LinearLayout
@@ -185,15 +181,26 @@
                 android:scaleType="centerInside"
                 android:src="@drawable/btn_pad_plus" />
 
-            <ImageView
-                android:id="@+id/btn_equal_s"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_btn_equal_s"
                 style="@style/CalWidget.Button.Pad.IV"
-                android:contentDescription="@string/equalDesc"
                 android:padding="@dimen/btn_pad_number_padding"
-                android:scaleType="center"
-                android:src="@drawable/btn_pad_equal"
-                android:focusable="true"
-                android:background="@drawable/corner"/>
+
+                >
+
+                <ImageView
+                    android:id="@+id/btn_equal_s"
+                    android:layout_width="@dimen/_44sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/corner"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/equalDesc"
+                    android:padding="@dimen/_10sdp"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn_pad_equal" />
+            </androidx.cardview.widget.CardView>
 
             <ImageView
                 android:id="@+id/btn_ok_s"
