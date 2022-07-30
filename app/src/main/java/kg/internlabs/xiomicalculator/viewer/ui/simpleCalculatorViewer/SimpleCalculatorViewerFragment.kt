@@ -18,6 +18,8 @@ import kg.internlabs.xiomicalculator.viewer.ui.extentions.showToast
 class SimpleCalculatorViewerFragment : Fragment() {
     private lateinit var binding: FragmentCalculatorBinding
     private var calculatorController: SimpleCalculatorController
+    private lateinit var mAdapter : HistoryAdapter
+
     init {
         println("******* Cal view constructor started")
         calculatorController = SimpleCalculatorController(viewer = this)
@@ -69,7 +71,6 @@ class SimpleCalculatorViewerFragment : Fragment() {
 
         scroll.fullScroll(View.FOCUS_DOWN)
 
-
     }
 
     fun updateResults(inputField: String, outputField: String) = with(binding){
@@ -84,22 +85,21 @@ class SimpleCalculatorViewerFragment : Fragment() {
 
     private fun historyOfCalculations(history: List<History>) = with(binding)  {
         recyclerCalculatorResult.layoutManager = LinearLayoutManager(requireContext())
-        recyclerCalculatorResult.adapter = HistoryAdapter(history)
+        mAdapter = HistoryAdapter(history)
+        recyclerCalculatorResult.adapter = mAdapter
+
+        scroll.fullScroll(View.FOCUS_DOWN)
     }
 
     fun thatIsIt(totalTemp: String, result: String, list: List<History>) = with(binding) {
         textViewInput.text = totalTemp
         textViewInput.textSize = 24.5f
 
-
         textViewResult.text = result
         textViewResult.textSize = 34.5f
 
         historyOfCalculations(list)
         scroll.fullScroll(View.FOCUS_DOWN)
-        scroll.fullScroll(View.FOCUS_DOWN)
-        scroll.fullScroll(View.FOCUS_DOWN)
-        scroll.fullScroll(View.FOCUS_DOWN)
-        scroll.fullScroll(View.FOCUS_DOWN)
+
     }
 }
